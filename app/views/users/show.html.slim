@@ -1,0 +1,8 @@
+h1 = t :show_user, user: User.human_attribute_name(@user.name)
+
+p 
+  = t User.human_attribute_name("email")
+  | : 
+  = @user.email
+
+= link_to "一覧画面に戻る", :blogs

@@ -1,0 +1,11 @@
+h1 = t :log_in
+
+= form_with scope: :session, url: :sessions, local: true do |f|
+  .form-group.my-4
+    = f.label :email
+    = f.text_field :email
+  .form-group.my-4
+    = f.label :password
+    = f.password_field :password
+
+  = f.submit t(:log_in), class: "btn btn-primary"

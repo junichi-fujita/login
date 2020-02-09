@@ -3,11 +3,20 @@ ja:
   index: "一覧表示"
   show: "詳細表示"
   edit: "変更画面"
+  sign_up: "サインアップ"
+  show_user: "%{user}のページ"
+  log_in: "ログイン"
 
   activerecord:
     models:
       blog: ブログ
+      user: ユーザー
     attributes:
       blog:
         title: タイトル
         content: 内容
+      user:
+        name: 氏名
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード（確認用）
